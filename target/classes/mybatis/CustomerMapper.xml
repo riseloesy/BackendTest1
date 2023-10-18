@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="myspring.customer.dao.mapper.CustomerMapper">
+<!-- <mapper namespace="customerNS"> -->
+
+<!-- 조회 쿼리 --> <!-- statement에  id="selectUserById" 들어감 /parameter의 값이userid=#{value}서  #{value}에 들어감-->
+	<!-- <T> T selectOne(String statement, Object parameter) -->
+	<select id="selectCustomerByName" parameterType="string" resultType="customer">
+		select * from customer where cname=#{value}
+	</select>  
+
+	<select id="selectCustomerList" resultType="customer">
+		select * from customer order by cid
+	</select>
+
+<!-- 	<insert id="insertUser" parameterType="User"> -->
+<!-- 		insert into users (userid, name, gender, city) -->
+<!-- 		values(#{userId},#{name},#{gender},#{city} ) -->
+<!-- 	</insert> -->
+<!-- 
+	<update id="updateUser" parameterType="User">
+		update users set
+		name = #{name},
+		gender = #{gender},
+		city = #{city}
+		where userid = #{userId}
+	</update>
+
+	<delete id="deleteUser" parameterType="string">
+		delete from users where userid = #{value}
+	</delete> -->
+	
+</mapper>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

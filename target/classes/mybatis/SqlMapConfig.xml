@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<!-- log4j2 설정   콘솔에 록인이 됬는지 잘찍히라는 거~  LOG4J2가 필요! 파일 있음 안에. -->
+	<settings>
+         <setting name="defaultStatementTimeout" value="3"/> 
+         <setting name="logImpl" value="LOG4J2"/>
+    </settings>
+    
+	<typeAliases>
+		<typeAlias alias="customer" type="myspring.customer.vo.CustomerVo" />
+		
+	</typeAliases>
+
+</configuration>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
